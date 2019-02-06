@@ -23,7 +23,7 @@ class Building
 
   def renter_with_highest_rent
     max_rent = @units.max_by do |rent|
-
+      rent.monthly_rent
     end
   max_rent
   end
